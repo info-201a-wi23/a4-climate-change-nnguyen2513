@@ -1,10 +1,7 @@
-#Loading libraries and dataset 
+#Loading libraries  
 library(plotly)
-library(ggplot2)
 library(shiny)
 library(dplyr)
-
-data_set <- read.csv("https://raw.githubusercontent.com/owid/co2-data/master/owid-co2-data.csv")
 
 sidepanel <- sidebarPanel(
   country_input <- selectInput(

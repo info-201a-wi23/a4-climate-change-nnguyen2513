@@ -1,11 +1,10 @@
 #Loading libraries and dataset 
 library(plotly)
-library(ggplot2)
 library(shiny)
 library(dplyr)
 
 data_set <- read.csv("https://raw.githubusercontent.com/owid/co2-data/master/owid-co2-data.csv")
-data_set <- filter(data_set, year > 1950) 
+data_set <- filter(data_set, year > 2000) 
 
 server <- function(input, output) {
   output$plot <- renderPlotly({
